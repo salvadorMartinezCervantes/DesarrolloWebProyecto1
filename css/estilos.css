@@ -1,23 +1,94 @@
 *{ margin: 0;
 box-sizing: border-box;
 }
-body{ font-family: sans-serif;
-}
- .destino__img{
-    max-width: 85%;
-}
+body { 
+    background-size:100% 100%;   
+    background-repeat: no-repeat;   
+    font-family: serif;
+    color:#333;
+    font-size: 1.3rem; 
+    line-height: 1.6em; 
+    margin: 0; 
+   }
+   
+   h1{
+    line-height: 1.3em;   
+   }
+   
+ 
+   
+   .container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;   
+   
+   }
+   .icon2{
+   /* margin: 5px auto auto -20%; */
+
+   width: 55px;
+   height: 50px;
+   }
+
+   .iconInde{
+       margin: 5px auto auto -20%;
+   }
+   .letraNav{
+       font-family: Arial;
+   }
+   
+   .header{
+       background:rgb(142, 167, 4) ;
+
+       color :white;
+   
+   }
+   .header a{
+       color:white;
+       text-decoration: none;
+   }
+   
+   .logo-nav-container{
+       display: flex;
+       justify-content:space-between ;
+       align-items: center;
+   }
+   
+   .navigation ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+   
+   }
+   .navigation ul li{
+       display: inline-block;
+   }
+   
+   .navigation ul li a{
+       display: block;
+       padding:0.5rem 1rem;
+       transition: all 0.8s linear;
+       border-radius: 20px;
+   }
+   .navigation ul li a:hover {
+       background:#ffb62d;
+   }
+   
+   
+
+
+
+/////////////////////////////////////
 .logo{
     width: 155px;
     height: 50px;
 }
 .contenedor{
    margin: 100%;
-    margin: auto;
+    margin: 100px auto auto auto;
 }
 /*-----------------header---------------------------*/
-.header{
-    background: #fff;
-}
+
 .header .contenedor{
     display: flex;
      justify-content: space-between;
@@ -70,7 +141,7 @@ body{ font-family: sans-serif;
     width: 100%;
 }
 .banner {
-  position: relative;
+  /*position:relative;*/
   text-align: center;
 } 
 #btn-prev,#btn-next{
@@ -100,13 +171,14 @@ body{ font-family: sans-serif;
    right: 10px;
 }
 .banner__descripcion{
-    background: rgba(0,0,0,0.5);
+    background: rgba(184, 178, 178, 0.5);
     color: #fff;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+     border-radius: 20px;
 }
 .banner__descripcion h1{
     font-size:30px;
@@ -191,10 +263,10 @@ transform:scale(1.1);
     padding: 15px;
     margin: 15px;
     font-size: 20px;
-  background: #21aedb;
+    background: #21aedb;
     border: 0;
-     cursor: pointer;
-     color: white;
+    cursor: pointer;
+    color: white;
     font-weight: bold;
 }
 .button:hover {
@@ -204,9 +276,9 @@ transform:scale(1.1);
  margin: 15px; 
 }
 .especial .contenedor{
-     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /*-----------------estilos de Ofertas--------------*/
 .ofertas__titulo{
@@ -216,7 +288,7 @@ transform:scale(1.1);
 }
 .ofertas__img{
     width: 100%;
-   filter: brightness(60%);
+    filter: brightness(60%);
 }
 .ofertas__columna{
     position: relative;
@@ -386,7 +458,7 @@ footer .contenedor {
     width: 60px;
     height: 60px;
     transform: translateY(-50%);
-   line-height: 50px;
+    line-height: 50px;
     font-size: 60px;
     }
     .banner__descripcion h1 {  
@@ -396,7 +468,7 @@ footer .contenedor {
         font-size: 28px; 
 }
     .slider__txt2 {
-      font-size: 32px;
+        font-size: 32px;
         padding: 25px;  
   }
     .destino__columna{
@@ -413,7 +485,7 @@ footer .contenedor {
         width: 32%; 
     }
       .fondo__img{
-    padding:0px 20px 0px 20px;   
+        padding:0px 20px 0px 20px;   
 }
     .fondo__titulo{
         font-size: 80px;
@@ -425,8 +497,9 @@ footer .contenedor {
 @media(min-width:1280px){
     .banner__descripcion {
         padding: 50px;
-         width: 1200px;
+        width: 1200px;
     }
     .contenedor{
         width: 1200px;
     }
+}
