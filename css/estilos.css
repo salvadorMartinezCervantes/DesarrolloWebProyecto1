@@ -78,7 +78,6 @@ body {
 
 
 
-/////////////////////////////////////
 .logo{
     width: 155px;
     height: 50px;
@@ -110,7 +109,7 @@ body {
 .nav{ 
     position: absolute;
     top: 60px;
-    left: -100%;
+    left: -50%;
     transition: all 0.5s;
     width: 100%;
     z-index: 100;
@@ -136,9 +135,15 @@ body {
 .muestrate{
     left: 0;
 }
-/*-----------------slider---------------------------*/
+/*-----------------slider---------------------------
 .banner img{
+  
     width: 100%;
+    
+}
+*/
+.banner2 img{
+    width: 250px;  
 }
 .banner {
   /*position:relative;*/
@@ -438,6 +443,7 @@ footer .contenedor {
      .contenedor{
         width: 1000px;
     }
+    
     .nav {
     position: static;
     width: auto;
@@ -502,4 +508,12 @@ footer .contenedor {
     .contenedor{
         width: 1200px;
     }
+}
+
+#telefono{
+ 
+  
+    top:1rem;
+    right: 2rem;
+   
 }

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "prueba";
+}
+
+<h2>prueba</h2>
+
+@{
+    if (IsPost)
+    {
+        String compania = Request.Form["compania"];
+        String contacto = Request.Form["contacto"];
+        String empleados = Request.Form["empleados"];
+
+
+        <text>
+            You entered:
+            <br />
+            Compañia: @compania
+            <br />
+            Contacto: @contacto
+            <br />
+            Empleados: @empleados
+            <br />
+        </text>
+    }
+}
+
+<form method="post">
+
+    <fieldset>
+        <legend>Add Customer</legend>
+        <div>
+            <label for="compania">Nombre de la compañia:</label>
+            <input type="text" name="compania" value="" />
+        </div>
+        <div>
+            <label for="contacto">Contacto de la compañia:</label>
+            <input type="text" name="contacto" value="" />
+        </div>
+        <div>
+            <label for="empleados">Numero de empleados:</label>
+            <input type="int" name="empleados" value="" />
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="submit" name="enviar" value="Submit" />
+        </div>
+    </fieldset>
+</form>
