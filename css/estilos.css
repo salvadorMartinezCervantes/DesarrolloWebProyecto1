@@ -1,7 +1,18 @@
 *{ margin: 0;
 box-sizing: border-box;
 }
+.header{
+    background:rgb(212, 204, 88) ;
+
+    color :white;
+
+}
+.header a{
+    color:white;
+    text-decoration: none;
+}
 body { 
+    background-color: rgb(230, 236, 199);
     background-size:100% 100%;   
     background-repeat: no-repeat;   
     font-family: serif;
@@ -9,6 +20,9 @@ body {
     font-size: 1.3rem; 
     line-height: 1.6em; 
     margin: 0; 
+   }
+   #fondo{
+       width: 100%;
    }
    
    h1{
@@ -37,16 +51,7 @@ body {
        font-family: Arial;
    }
    
-   .header{
-       background:rgb(142, 167, 4) ;
-
-       color :white;
    
-   }
-   .header a{
-       color:white;
-       text-decoration: none;
-   }
    
    .logo-nav-container{
        display: flex;
@@ -71,7 +76,7 @@ body {
        border-radius: 20px;
    }
    .navigation ul li a:hover {
-       background:#ffb62d;
+       background:#e0e26a;
    }
    
    
@@ -176,7 +181,7 @@ body {
    right: 10px;
 }
 .banner__descripcion{
-    background: rgba(184, 178, 178, 0.5);
+    background: rgba(23, 105, 116, 0.5);
     color: #fff;
     padding: 20px;
     position: absolute;
@@ -515,5 +520,22 @@ footer .contenedor {
   
     top:1rem;
     right: 2rem;
+   
+}
+#titulo_principal{
+    color: #f8e537;
+    text-shadow: 0px 0px 6px rgb(107, 106, 106);
+   
+    /* /*box-shadow: 0px 0px 6px #848484;
+    
+     box-shadow: 0px 1px 0.01px rgb(0, 0, 0) ;
+    border-radius: 50%;
+    */  
+}
+#avion_logo{
+    width: 20rem;
+}
+#logo_standar{
+    width: 10rem;
    
 }
