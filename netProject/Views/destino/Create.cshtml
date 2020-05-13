@@ -1,0 +1,47 @@
+﻿@model netProject.Models.destino
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+
+
+
+<body class="fondo-registro">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-register">
+        <div class="register-img">
+            <img src="~/img/avatar.png" alt="">
+        </div>
+        <h1>Registro</h1>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <label for="nombre">Nombre:</label><br>
+        @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "controls", @placeholder = "Ingrese su nombre", required = "" } })
+        @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
+        <br>
+        <label for="apellidos">Costo</label><br>
+        @Html.EditorFor(model => model.costo, new { htmlAttributes = new { @class = "controls", @placeholder = "Ingrese ", required = "" } })
+        @Html.ValidationMessageFor(model => model.costo, "", new { @class = "text-danger" })
+        <br>
+       
+
+
+        <input type="submit" value="Registrar" class="botons" formaction="Create" />
+    </div>
+
+
+
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+</body>

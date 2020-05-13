@@ -49,6 +49,8 @@ C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\roslyn\
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Antlr3.Runtime.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\dotnet-aspnet-codegenerator-design.exe
+C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.dll
+C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.SqlServer.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Microsoft.AspNetCore.Html.Abstractions.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Microsoft.AspNetCore.Razor.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Microsoft.AspNetCore.Razor.Language.dll
@@ -95,6 +97,8 @@ C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\System.
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\System.Web.WebPages.Razor.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\WebGrease.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\dotnet-aspnet-codegenerator-design.xml
+C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.xml
+C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.SqlServer.xml
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Microsoft.AspNetCore.Html.Abstractions.xml
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Microsoft.AspNetCore.Razor.xml
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\Microsoft.AspNetCore.Razor.Language.xml
@@ -201,7 +205,3 @@ C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\obj\Debug\n
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\obj\Debug\netProject.csproj.CopyComplete
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\obj\Debug\netProject.dll
 C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\obj\Debug\netProject.pdb
-C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.dll
-C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.SqlServer.dll
-C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.xml
-C:\Users\Salvador\Documents\GitHub\DesarrolloWebProyecto1\netProject\bin\EntityFramework.SqlServer.xml

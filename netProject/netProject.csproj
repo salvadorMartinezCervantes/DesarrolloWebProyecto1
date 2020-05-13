@@ -233,21 +233,30 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\destinoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\hotelrController.cs" />
+    <Compile Include="Controllers\hotelrsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\destino.cs" />
+    <Compile Include="Models\destinoContext.cs" />
     <Compile Include="Models\EjemploContext.cs" />
+    <Compile Include="Models\hotelr.cs" />
+    <Compile Include="Models\hotelrContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PruebasController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap2.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style2.css" />
+    <Content Include="Content\style4.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -286,6 +295,23 @@
     <Content Include="Views\Pruebas\Details.cshtml" />
     <Content Include="Views\Pruebas\Edit.cshtml" />
     <Content Include="Views\Pruebas\Index.cshtml" />
+    <Content Include="Views\hotelrs\Create.cshtml" />
+    <Content Include="Views\hotelrs\Delete.cshtml" />
+    <Content Include="Views\hotelrs\Details.cshtml" />
+    <Content Include="Views\hotelrs\Edit.cshtml" />
+    <Content Include="Views\hotelrs\Index.cshtml" />
+    <Content Include="Views\hotelr\Create.cshtml" />
+    <Content Include="Views\hotelr\Delete.cshtml" />
+    <Content Include="Views\hotelr\Details.cshtml" />
+    <Content Include="Views\hotelr\Edit.cshtml" />
+    <Content Include="Views\hotelr\Index.cshtml" />
+    <Content Include="Views\destino\Create.cshtml" />
+    <Content Include="Views\destino\Delete.cshtml" />
+    <Content Include="Views\destino\Details.cshtml" />
+    <Content Include="Views\destino\Edit.cshtml" />
+    <Content Include="Views\destino\Index.cshtml" />
+    <Content Include="Views\Pruebas\Index2.cshtml" />
+    <Content Include="Views\destino\inicio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

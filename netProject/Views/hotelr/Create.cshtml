@@ -1,0 +1,42 @@
+﻿@model netProject.Models.hotelr
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<body class="fondo-registro">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-register">
+            <div class="register-img">
+                <img src="~/img/avatar.png" alt="">
+            </div>
+            <h1>Registro</h1>
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <label for="nombre">Hotel:</label><br>
+            <br>
+            @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "controls", @placeholder = "Ingrese su nombre", required = "" } })
+            @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
+            <label for="apellidos">Precio</label><br>
+            @Html.EditorFor(model => model.precio, new { htmlAttributes = new { @class = "controls", @placeholder = "Ingrese sus apellidos", required = "" } })
+            @Html.ValidationMessageFor(model => model.precio, "", new { @class = "text-danger" })
+            <label for="correo">Categoria</label><br>
+            @Html.EditorFor(model => model.categoria, new { htmlAttributes = new { @class = "controls", @placeholder = "", type = "int", required = "" } })
+            @Html.ValidationMessageFor(model => model.categoria, "", new { @class = "text-danger" })
+
+
+            <input type="submit" value="Registrar" class="botons" formaction="Create" />
+        </div>
+
+
+
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

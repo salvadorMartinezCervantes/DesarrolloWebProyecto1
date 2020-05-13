@@ -20,5 +20,7 @@ namespace netProject.Models
         }
 
         public System.Data.Entity.DbSet<netProject.Models.Prueba> Pruebas { get; set; }
+
+        public System.Data.Entity.DbSet<netProject.Models.hotelr> hotelrs { get; set; }
     }
 }

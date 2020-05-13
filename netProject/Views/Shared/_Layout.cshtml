@@ -1,38 +1,51 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/style2.css")
+    @Styles.Render("~/Content/style4.css")
+    @Styles.Render("~/Content/estilo.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="index.html" class="iconInde"><img src="img/ViajeAlDiaLogoFinal.png" width="50" height="50" alt=""></a>
+
+            <nav class="navigation letraNav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lugares.html">Lugares</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="hoteles.html">Hoteles</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="nosotros.html">Nosotros </a> </li>
+                    <li>  <div id="telefono" class="letraNav">Tel.5566232855  </div> </li>
+
                 </ul>
-            </div>
+            </nav>
         </div>
-    </div>
+    </header>
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        <footer class="footer">
+            <div class="contenedor">
+                <p class="copy">TRAVEL STYLE &copy; 2018</p>
+                <div class="sociales">
+                    <img src="img/icono1.png" alt="">
+                    <img src="img/icono2.png" alt="">
+                    <img src="img/icono3.png" alt="">
+                    <img src="img/icono4.png" alt="">
+                </div>
+            </div>
         </footer>
     </div>
 

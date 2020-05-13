@@ -1,0 +1,117 @@
+﻿@model IEnumerable<netProject.Models.destino>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<img id="fondo" src="img/p1.jpg" alt"" title="">
+<div class="banner">
+
+    <div class="contenedor">
+
+
+
+        <div class="banner__descripcion" style="margin-top: 50px;">
+            <h1 class="contenedor" id="titulo_principal">Viaje al dia</h1>
+
+            <!--   <i class="far fa-paper-plane fa-3x"></i>               -->
+
+            <img src="img/Logos/color5.png" alt="" id="logo_standar">
+            <p class="contenedor" id="titulo_principal">Lo mejor mundo a los mejores precios.</p>
+        </div>
+
+    </div>
+</div>
+
+<!--    BANNER             -->
+
+
+<main>
+
+    <section class="destino">
+
+
+        <div class="contenedor ">
+            <h2 class="destino__titulo">Destino</h2>
+
+
+            <section class="ofertas">
+                <h3 class="ofertas__titulo">Ofertas y Descuentos</h3>
+                <div class="contenedor">
+                    <article class="ofertas__columna">
+                        <img src="img/ofertas1.jpg" alt="" class="ofertas__img">
+                        <h4>CURACAO</h4>
+                    </article>
+                    <article class="ofertas__columna">
+                        <img src="img/ofertas2.jpg" alt="" class="ofertas__img">
+                        <h4>ARUBA</h4>
+                    </article>
+                    <article class="ofertas__columna">
+                        <img src="img/ofertas3.jpg" alt="" class="ofertas__img">
+                        <h4>DUBAI</h4>
+                    </article>
+                    <article class="ofertas__columna">
+                        <img src="img/ofertas4.jpg" alt="" class="ofertas__img">
+                        <h4>ORLANDO</h4>
+                    </article>
+                    <article class="ofertas__columna">
+                        <img src="img/ofertas5.jpg" alt="" class="ofertas__img">
+                        <h4>EUROPA</h4>
+                    </article>
+                    <article class="ofertas__columna">
+                        <img src="img/ofertas6.jpg" alt="" class="ofertas__img">
+                        <h4>ASIA</h4>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="fondo">
+                <div class="contenedor">
+                    <article class="info__fondo">
+                        <img src="img/t4.jpg" alt="" class="fondo__img">
+                        <h5 class="fondo__titulo">Viaja hoy Viaja ya!</h5>
+                        <p class="fondo__txt">El destino te espera</p>
+                    </article>
+
+                </div>
+
+            </section>
+</main>
+
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costo)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
